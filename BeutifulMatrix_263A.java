@@ -1,0 +1,28 @@
+import java.util.*;
+public class BeutifulMatrix_263A {
+    public static void main(String args[]){
+        boolean ans= true;
+        Scanner sc= new Scanner(System.in);
+        int[][] arr=new int[5][5];
+        for(int i=0;i<5;i++){
+            for(int j=0;j<5;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        int x=0;
+        int y=0;
+        for(int i=0;i<5;i++){
+            for(int j=0;j<5;j++){
+                if(arr[i][j]==1){
+                    x=i;
+                    y=j;
+                    break;
+                }
+            }
+        }
+        System.out.println(Math.abs(x-2)+Math.abs(y-2));
+        
+    }
+        
+    
+}
