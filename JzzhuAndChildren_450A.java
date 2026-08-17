@@ -15,8 +15,10 @@ public class JzzhuAndChildren_450A {
 
             int c = sc.nextInt();
 
-            int t = (c + m - 1) / m;
-
+            int t = c/m;
+            if(!(c%m==0)){
+                t=t+1;
+            }
             if (t >= max) {
                 max = t;
                 ans = i;
