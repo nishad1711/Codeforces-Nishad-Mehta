@@ -20,16 +20,16 @@ public class Reconnaissance2_34A {
 
             if (diff < min) {
                 min = diff;
-                ans1 = i;
-                ans2 = i + 1;
+                ans1 = i + 1;   
+                ans2 = i + 2;   
             }
         }
 
         int diff = Math.abs(arr[n - 1] - arr[0]);
 
         if (diff < min) {
-            ans1 = n - 1;
-            ans2 = 0;
+            ans1 = n;
+            ans2 = 1;
         }
 
         System.out.println(ans1 + " " + ans2);
