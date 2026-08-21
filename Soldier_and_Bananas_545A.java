@@ -1,5 +1,5 @@
 import java.util.*;
-public class Soldier_and_Bananas{
+public class Soldier_and_Bananas_545A{
     public static void main(String[] args){
         Scanner sc= new Scanner(System.in);
         int k=sc.nextInt();
